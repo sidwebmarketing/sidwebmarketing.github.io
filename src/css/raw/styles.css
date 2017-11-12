@@ -1,0 +1,524 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+div, section {
+  overflow: hidden; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.main-nav {
+  height: calc(5em + 5px);
+  padding: 1em 1em;
+  background: #fff9fa;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  box-sizing: border-box;
+  border-bottom: solid #ecefefcc 2px; }
+  .main-nav h1 {
+    float: left;
+    margin-top: 10px; }
+  .main-nav > ul {
+    display: none; }
+  .main-nav .fa-bars {
+    float: right;
+    margin-top: 20px; }
+    .main-nav .fa-bars:before {
+      font-size: 30px;
+      margin-right: 20px; }
+    .main-nav .fa-bars:hover {
+      cursor: pointer; }
+  .main-nav .mobile-nav {
+    display: none;
+    width: 100vw;
+    margin-top: 4.3em; }
+    .main-nav .mobile-nav a {
+      text-decoration: none; }
+      .main-nav .mobile-nav a li {
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center;
+        background-color: #ecefefcc;
+        display: block;
+        padding-top: 0.75em;
+        height: 3em;
+        margin-left: -1.1em;
+        border: 0.5px solid #fff9fa;
+        color: black; }
+        .main-nav .mobile-nav a li:hover {
+          background-color: #0ba4e0;
+          color: white; }
+
+.hero {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  height: 600px; }
+  .hero header {
+    text-align: center; }
+    .hero header img {
+      width: 25%; }
+  .hero p {
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 10px 15px;
+    width: 80%; }
+    .hero p i {
+      font-weight: bold; }
+  .hero div {
+    width: 80%;
+    margin-top: 50px; }
+    .hero div a {
+      height: 2em;
+      max-width: 430px;
+      width: 80%; }
+      .hero div a button {
+        height: 2em;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px; }
+
+#about {
+  padding: 5em 4em;
+  background-color: #0e1111; }
+  #about article h1 {
+    font: bold 0.8em 'Montserrat';
+    padding: 1.2em 0;
+    color: #ecefefcc; }
+  #about article p {
+    font: 200 0.8em 'Montserrat';
+    color: #f6fbfb;
+    line-height: 2;
+    margin-bottom: 10px; }
+  #about article h2 {
+    font: 300 1em 'Cabin';
+    color: #f6fbfb;
+    margin-top: 35px; }
+  #about img {
+    position: relative;
+    left: -4em;
+    bottom: -6em;
+    width: 100vw; }
+
+#services {
+  padding: 100px 1.2em;
+  box-sizing: border-box; }
+  #services section {
+    margin-top: 60px; }
+    #services section article {
+      margin-bottom: 20px;
+      padding: 2em 1.5em;
+      box-sizing: border-box; }
+      #services section article:hover img {
+        width: 55%; }
+      #services section article img {
+        transition: width 0.75s;
+        width: 50%; }
+
+#consultation {
+  padding: 6em 3em; }
+  #consultation form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    #consultation form input, #consultation form select, #consultation form textarea {
+      box-sizing: border-box;
+      width: 100%;
+      height: 50px;
+      padding: 7px 12px; }
+    #consultation form textarea {
+      min-height: 200px; }
+
+footer {
+  box-sizing: border-box;
+  height: 100px;
+  color: #FFF;
+  font-size: 15px;
+  padding: 25px;
+  line-height: 1.5;
+  font-family: 'Lato';
+  overflow: visible;
+  font-weight: lighter; }
+  footer a {
+    color: #FFF;
+    font-size: 15px; }
+  footer div {
+    overflow: visible;
+    text-decoration: underline;
+    color: tomato; }
+
+body {
+  background: #34313c; }
+
+a {
+  text-decoration: none; }
+
+.main-nav {
+  color: #0e1111; }
+  .main-nav h1 {
+    font-family: 'Arvo';
+    font-weight: bold;
+    font-size: 50px;
+    color: #0e1111; }
+  .main-nav ul {
+    list-style: none;
+    font: 500 15px Lato; }
+    .main-nav ul li {
+      display: inline;
+      margin: 0 15px; }
+      .main-nav ul li a {
+        letter-spacing: 1.5px;
+        color: #0e1111;
+        text-decoration: none; }
+        .main-nav ul li a:hover {
+          color: #e84b3a; }
+
+.hero {
+  background-color: #34313c;
+  background-image: url("../../imgs/hero/herovecmob.png");
+  background-repeat: no-repeat;
+  background-size: calc(100% - 5em) auto;
+  background-position: left bottom;
+  background-attachment: fixed; }
+  .hero header {
+    font-family: 'Josefin Sans'; }
+    .hero header h1 {
+      padding-top: 0.3em;
+      font-size: 6em;
+      color: #f6fbfb; }
+      .hero header h1 span {
+        color: #fff9fa; }
+    .hero header h3 {
+      font-family: 'Lato';
+      font-weight: lighter;
+      font-size: 1.65em;
+      text-transform: lowercase;
+      color: #f6fbfb; }
+  .hero p {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-transform: lowercase;
+    color: #f6fbfb;
+    text-align: center;
+    line-height: 1.75;
+    letter-spacing: 1px; }
+  .hero div a button {
+    background: #0ba4e0;
+    color: #34313c;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1.4em;
+    transition: color 0.5s;
+    border: 0px white solid; }
+    .hero div a button:hover {
+      background: #34313c;
+      border-width: 3px;
+      color: white;
+      cursor: pointer; }
+
+#services {
+  background: white;
+  font-family: 'poppins';
+  text-align: center;
+  color: #34313c; }
+  #services h3 {
+    font-size: 1.5em;
+    font-weight: 300; }
+  #services > h3 {
+    font-size: 1em;
+    font-family: 'Lato';
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 10px; }
+  #services h1 {
+    font-size: 3em;
+    padding: 15px 0; }
+    #services h1 i {
+      color: #0ba4e0;
+      font-weight: 700; }
+      #services h1 i:nth-child(2) {
+        color: #e84b3a; }
+  #services section article p a {
+    color: #0ba4e0; }
+    #services section article p a:hover {
+      color: #e84b3a; }
+  #services section article:hover {
+    background: #ecefefcc; }
+    #services section article:hover h1 {
+      color: #0ba4e0; }
+  #services section article h1 {
+    font-family: 'poppins';
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #34313c;
+    font-weight: 500;
+    letter-spacing: 3px; }
+  #services section article p {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 2; }
+
+#consultation {
+  background: #a7a6aa;
+  font-family: 'Lato';
+  font-weight: 200; }
+  #consultation h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #111010;
+    font-size: 35px;
+    font-family: Lato;
+    font-weight: 300;
+    letter-spacing: 6px; }
+  #consultation h3 {
+    margin-top: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    letter-spacing: 2px; }
+    #consultation h3 a {
+      color: #006d98;
+      font-weight: 700; }
+      #consultation h3 a:hover {
+        color: white; }
+  #consultation form input, #consultation form select, #consultation form textarea {
+    font-family: 'Lato';
+    font-size: calc(13px + 1px / 3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #727272;
+    transition: background 0.4s;
+    max-width: 100%;
+    min-width: 100%; }
+    #consultation form input:hover, #consultation form select:hover, #consultation form textarea:hover {
+      color: #111010;
+      background: #727272; }
+    #consultation form input:focus, #consultation form select:focus, #consultation form textarea:focus {
+      background: #d5d5d5;
+      color: black; }
+  #consultation form input[type=submit] {
+    background: #d5d5d5;
+    font-weight: bold;
+    cursor: pointer; }
+    #consultation form input[type=submit]:hover {
+      color: #111010;
+      background: #727272; }
+
+.services article .icon {
+  background: url("../../imgs/icons/visible.png") 100% 0 no-repeat;
+  width: 50vw;
+  height: calc(8 * 50vw / 7);
+  background-size: cover;
+  filter: saturate(100%) brightness(0%);
+  background-attachment: scroll;
+  transition: filter 0.6s;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  margin-bottom: 20px; }
+
+.services article:hover .icon {
+  filter: saturate(100%) brightness(80%);
+  animation: service-icons 0.25s steps(3);
+  animation-fill-mode: forwards; }
+
+.services article:nth-child(1) .icon {
+  background-image: url("../../imgs/icons/visible.png"); }
+
+.services article:nth-child(2) .icon {
+  background-image: url("../../imgs/icons/intuitive.png"); }
+
+.services article:nth-child(3) .icon {
+  background-image: url("../../imgs/icons/mobile.png"); }
+
+@keyframes service-icons {
+  0% {
+    background-position: 0% 0; }
+  100% {
+    background-position: 0%  100%; } }
+
+@media screen and (min-width: 475px) and (max-width: 749px) {
+  .hero {
+    background-size: 50% auto; }
+  #services section article .icon {
+    width: 30vw;
+    height: calc(8 * 30vw / 7); }
+  #services section article:hover img {
+    width: 35%; }
+  #services section article img {
+    width: 30%; }
+  .mocks .image {
+    width: 100vw;
+    background: url("../../imgs/AcctANDLawMOCKSmob.png");
+    height: 180vh;
+    background-size: cover;
+    margin-top: -50px; } }
+
+@media screen and (min-width: 750px) and (max-width: 969px) {
+  .hero {
+    background-size: 50% auto; }
+  #about article {
+    width: 70%; }
+  #services section article .icon {
+    width: 20vw;
+    height: calc(8 * 20vw / 7); }
+  #services section article:hover img {
+    width: 25%; }
+  #services section article img {
+    width: 20%; } }
+
+@media screen and (min-width: 970px) {
+  .main-nav ul {
+    display: block;
+    float: right;
+    margin-top: 1.3em;
+    margin-left: 10px;
+    text-transform: uppercase; }
+  .main-nav .fa-bars {
+    display: none; }
+  .main-nav .mobile-nav {
+    display: none; }
+  .hero {
+    background-image: url("../../imgs/hero/herovec.png");
+    background-size: auto 50vw; }
+    .hero div {
+      display: flex;
+      justify-content: space-around;
+      height: 5em;
+      margin-top: 100px; }
+      .hero div a {
+        width: calc(50% - 20px); }
+        .hero div a button {
+          height: 2em; }
+  #about article {
+    width: 50%; }
+  #services section {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto; }
+    #services section article {
+      width: calc((100% - 10px) / 4); }
+      #services section article .icon {
+        width: 15vw;
+        height: calc(8 * 15vw / 7);
+        margin-bottom: 50px; }
+  .mocks {
+    height: 140vh; }
+    .mocks p {
+      float: left;
+      width: 30vw;
+      margin-top: 50px; }
+    .mocks .image {
+      background: url("../../imgs/AcctANDLawMOCKS.png");
+      width: 75vw;
+      height: 140vh;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      margin-top: -50px; } }
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -50px; }
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

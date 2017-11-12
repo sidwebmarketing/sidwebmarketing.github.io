@@ -1,0 +1,1 @@
+$("#hamburger").click(function(c){$(".mobile-nav").toggle()}),$(".mobile-nav ul a").click(function(c){$("#hamburger").click()});
